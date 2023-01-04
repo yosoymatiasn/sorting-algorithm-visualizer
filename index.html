@@ -1,0 +1,63 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Sorting Visualization</title>
+		<link rel="stylesheet" type="text/css" href="style/index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<div class="header">
+			<h1>Sorting Visualizer</h1>
+			<div class="range">
+				<div class="slide">
+					<label for="bars">Size</label>
+					<input
+						id="bars"
+						type="range"
+						name="bars"
+						min="1"
+						max="100"
+						value="50"
+						oninput="setup()"
+						onchange="setup()"
+					/>
+				</div>
+				<div class="slide">
+					<label for="delay">Speed</label>
+					<input
+						id="delay"
+						type="range"
+						name="delay"
+						min="0"
+						max="1000"
+						value="500"
+						oninput="setup()"
+						onchange="setup()"
+					/>
+				</div>
+			</div>
+			<div class="buttons">
+				<select name="algorithm" id="algorithm-select">
+					<option value="selectionSort">Selection Sort</option>
+					<option value="bubbleSort">Bubble Sort</option>
+					<option value="mergeSort">Merge Sort</option>
+					<option value="quickSort">Quick Sort</option>
+					<option value="heapSort">Heap Sort</option>
+					<option value="quickSort">Quick Sort</option>
+				</select>
+				<button onclick="reset()">Generate New Array</button>
+				<button onclick="run()">Sort</button>
+			</div>
+		</div>
+		<div id="container"></div>
+		<script src="App/script.js"></script>
+	</body>
+</html>

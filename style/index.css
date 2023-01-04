@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+}
+
+html {
+	font-family: "Poppins", sans-serif;
+	font-family: "Roboto", sans-serif;
+	background: #030027;
+}
+
+#container {
+	display: flex;
+	margin: 0 auto;
+	width: intrinsic;
+	width: -moz-max-content;
+	width: -webkit-max-content;
+	height: 60%;
+}
+
+#bars,
+#delay {
+	vertical-align: middle;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	font-weight: bold;
+	background-color: #151e3f;
+	margin: 0;
+	color: white;
+	padding: 1em 2em;
+	margin-bottom: 2vw;
+}
+h1 {
+	width: 25%;
+	text-align: center;
+}
+.range {
+	justify-content: space-evenly;
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: wrap;
+}
+.slide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.4em;
+	margin: 0vw 1vw;
+}
+.bar {
+	border: 0.05vw solid black;
+	width: 0.6vw;
+	margin: 0.1vw;
+	background-color: #00fd87;
+}
+.buttons {
+	display: flex;
+	gap: 1em;
+}
+
+button {
+	min-width: 100px;
+	border: none;
+	cursor: pointer;
+	padding: 1em;
+}
+
+select {
+	cursor: pointer;
+}
+
+input[type="range"] {
+}
